@@ -80,8 +80,8 @@ class _LogInState extends State<LogIn> {
             ),
             Text(
               "ACEPTO LOS TERMINOS Y CONDICIONES DE USO",
-              style: TextStyle(fontSize: 13),
-              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 8),
+              textAlign: TextAlign.left,
             ),
           ],
         ),
@@ -92,10 +92,10 @@ class _LogInState extends State<LogIn> {
             borderRadius: BorderRadius.all(Radius.circular(3.0)),
           ),
           onPressed: () async {
-           // Navigator.push(
-             //   context,
-              //  MaterialPageRoute(
-                   // builder: (context) => Scanner()));
+           Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => EscanerPage()));
           },
         ),
             SizedBox(height: 15.0),
